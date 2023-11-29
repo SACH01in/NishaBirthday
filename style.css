@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&family=Staatliches&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(249 182 181);
+    /* overflow: hidden; */
+    /* font-family: 'Dosis', sans-serif; */
+    /* font-family: 'Staatliches', sans-serif; */
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.page1{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page1 h1{
+    font-weight: 300;
+    font-size: 4vw;
+    /* font-family: 'Rajdhani', sans-serif; */
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'Staatliches', sans-serif; 
+    text-align: center;
+    padding-top: 4vh;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+.HappyBirthday{
+    width: 70%;
+    height: auto;
+    margin-top: 3vh;
+    z-index: 5;
+}
+
+.frame{
+    margin-top: -30px ;
+    width: 105%;
+    height: auto;
+}
+
+.quote{
+    /* padding: 10px; */
+    font-weight: 300;
+    font-size: 2.2vh;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+.scroll{
+    color: rgb(254, 58, 91);
+    position: absolute;
+    bottom: 10px;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: 'Staatliches', sans-serif; 
+    animation: scrol 2s linear infinite;
+}
+.scroll svg{
+    color: rgb(254, 58, 91);
+}
+
+@keyframes scrol {
+    0%{
+        transform: translateY(-15px) scale(1.2);
+        opacity: 0.8;
+    }
+    100%{
+        transform: translateY(5px) scale(1);
+        opacity: .2;
+    }
+}
+
+.page2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(to bottom,rgb(249, 182, 181),white); */
+    padding: 20px;
+}
+
+.page2 .container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.page2 .container .back{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+}
+.page2 .container .back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page2 .container .front{
+    position: absolute;
+    bottom: 3vh;
+    left: 3.5vh;
+    width: fit-content;
+    height: auto;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+}
+.page2 .container .front .elem{
+    /* filter: invert(1); */
+    position: relative;
+    width: 260px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.page2 .container .front .elem h1{
+    color: #ffffff;
+    text-shadow: 0 0 5px #000000;
+    position: absolute;
+    font-size: 4vh;
+    font-family: 'Staatliches', sans-serif;
+    top:100%;
+}
+.page2 .container .front .elem h1:nth-child(1){
+    top: 0;
+}
+
+
+.page3{
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.page3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page3 h2{
+    font-size: 1.4rem;
+    font-weight: 200;
+    font-family: 'Staatliches', sans-serif;
+}
